@@ -13,7 +13,7 @@ FILENAMES_TO_AREAS = { #in km²
     "bottom-australia.tif": 7_692_024,
     "top-central-America.tif": 1_000_000,
     "right-south-east-asia.tif": 4_545_000,
-    "left-africa-europe.tif": 21_000_000,
+    "left-africa-europe.tif": 30_370_000 + 10_530_000,
     "top-canada.tif": 9_984_670
 }
 
