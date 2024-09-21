@@ -36,4 +36,8 @@ Este projeto calcula a porcentagem de consumo de energia elétrica por continent
 
 O programa gera um gráfico de pizza mostrando a porcentagem de consumo de energia elétrica de cada continente com base nos pixels brancos das imagens.
 
+### Saída com os dados utilizados:
+
+![Resultado](https://github.com/ValmirNogFilho/Energy-Consumption-by-Continent/blob/master/results/result.png)
+
 ---
