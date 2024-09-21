@@ -45,11 +45,15 @@ for img in allImgs:
     img.normalize = img.area_per_pixel / biggest_area_per_pixel
     weighted_sum += img.electric_pixels * img.normalize     
 
+percentages = []
+
 for img in allImgs:
-    consumption_percentage = (img.normalized_weight() / weighted_sum) * 100
+    percentages.append(consumption_percentage := round(
+        (img.normalized_weight() / weighted_sum) * 100, 2
+    ))
     print(f"{img.filename}: {consumption_percentage}%")
 
 graph = express.pie(names=[img.filename for img in allImgs], 
-                    values=[(img.normalized_weight() / weighted_sum) * 100 for img in allImgs])
+                    values=percentages)
 
 graph.show()
