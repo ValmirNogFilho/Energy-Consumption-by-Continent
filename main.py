@@ -43,7 +43,7 @@ weighted_sum = 0
 
 for img in allImgs:
     img.normalize = img.area_per_pixel / biggest_area_per_pixel
-    weighted_sum += img.electric_pixels * img.normalize     
+    weighted_sum += img.normalized_weight() 
 
 percentages = []
 
